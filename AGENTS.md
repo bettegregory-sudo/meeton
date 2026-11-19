@@ -8,6 +8,10 @@ Expo ships breaking changes every SDK release. APIs you remember are likely rena
 2. Fetch the matching versioned docs: `https://docs.expo.dev/versions/v<major>.0.0/`
 3. For anything else, fetch https://docs.expo.dev/llms.txt — an index of all Expo docs with corrections to common LLM misconceptions. Follow its links to the specific page you need; never answer from memory.
 
+## Product & UX context
+
+MeetOn is built from the Figma file `ktMvSbigsFexXJ4Co1kPHh`. Read `docs/UX_CONTEXT.md` (promise, user journey, personas, V1 retro) before designing a feature. UI is dark (bg `#0C131F`, accent `#47ADFF`, Manrope); tokens live in `src/theme/tokens.ts`.
+
 ## Commands
 
 Use `bunx` instead of `npx` if the project uses bun (`bun.lock` present).

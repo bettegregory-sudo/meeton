@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "meeton",
+    "name": "MeetOn",
     "slug": "meeton",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "dark",
     "ios": {
       "supportsTablet": true
     },
@@ -20,6 +20,27 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-image",
+      "expo-font",
+      "expo-router",
+      [
+        "expo-contacts",
+        {
+          "contactsPermission": "MeetOn utilise vos contacts pour vous aider à inviter vos proches dans vos tribus."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "MeetOn accède à vos photos pour votre photo de profil et celles de vos tribus."
+        }
+      ]
+    ],
+    "scheme": "meeton",
+    "experiments": {
+      "typedRoutes": true
     }
   }
 }
